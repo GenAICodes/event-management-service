@@ -1,0 +1,10 @@
+
+UserManagementApplication.java
+User.java
+UserService.java
+UserServiceImpl.java
+UserController.java
+UserRepository.java
+application.properties
+data.sql
+schema.sql

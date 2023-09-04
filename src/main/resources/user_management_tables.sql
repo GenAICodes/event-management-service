@@ -1,0 +1,16 @@
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE reviews (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    eventId VARCHAR(255) NOT NULL,
+    userId INT NOT NULL,
+    comment VARCHAR(255) NOT NULL,
+    rating INT NOT NULL,
+    FOREIGN KEY (userId) REFERENCES users(id)
+);
